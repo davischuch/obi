@@ -3,3 +3,5 @@
         - https://br.spoj.com/problems/TROIA13/
     - https://olimpiada.ic.unicamp.br/pratique/pj/2011/f2/gincana/
     - https://neps.academy/br/exercise/535
+    - https://olimpiada.ic.unicamp.br/pratique/p2/2012/f1/tarzan/
+        - https://neps.academy/br/exercise/520
