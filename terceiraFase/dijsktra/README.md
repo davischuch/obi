@@ -1,0 +1,5 @@
+- https://noic.com.br/materiais-informatica/curso/menor-caminho/
+    - https://olimpiada.ic.unicamp.br/pratique/p2/2009/f1/pontes/
+        - https://neps.academy/br/exercise/297
+    - https://neps.academy/br/exercise/65
+    - https://neps.academy/br/exercise/183
