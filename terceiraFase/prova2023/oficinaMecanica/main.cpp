@@ -1,51 +1,40 @@
 #include <iostream>
+#include <vector>
 #include <queue>
-#include <map>
 #include <algorithm>
 
-struct mech {
-    int time, tg, att;
-};
-
 int main() {
-    int n, m;
+    int n, m, result = 0;
     std::cin >> n >> m;
 
-    std::priority_queue<int, std::vector<int>, std::greater<int>> cars;
-    std::map<int, mech, std::greater<int>> mechanics;
+    std::vector<int> carros(n);
+    std::vector<int> mecanicos(m);
+    std::vector<int> atendimentos(m, 0);
+    std::priority_queue<std::pair<int, int>> pq;
 
     for (int i = 0; i < n; i++) {
         int aux;
         std::cin >> aux;
-        cars.push(aux);
+        carros[i] = aux;
     }
     for (int i = 0; i < m; i++) {
         int aux;
         std::cin >> aux;
-        mechanics[aux] = {0, 0, 0};
+        mecanicos[i] = aux;
+        pq.push({0, i});
     }
 
-    while(!cars.empty()) {
-        for (auto & m : mechanics) {
-            int current;
-            current = cars.top();
-            cars.pop();
-            
-            if (m.second.att == 0) {
-                m.second.tg = current*m.first;
-                m.second.att++;
-                continue;
-            } else {
-                m.second.time += m.second.tg;
-                m.second.tg += current*m.first;
-                m.second.att++;
-            }
-        }
+    std::sort(mecanicos.begin(), mecanicos.end());
+    std::sort(carros.begin(), carros.end());
+    std::reverse(carros.begin(), carros.end());
+
+    for (auto & c : carros) {
+        int tempo = (-c*pq.top().first), valor = pq.top().second;
+        pq.pop();
+        atendimentos[valor]++;
+        result += tempo;
+        pq.push({-atendimentos[valor]*mecanicos[valor] ,valor});
     }
 
-    int total = 0;
-    for (auto & m : mechanics) {
-        total += m.second.time;
-    }
-    std::cout << total;
+    std::cout << result;
 }
