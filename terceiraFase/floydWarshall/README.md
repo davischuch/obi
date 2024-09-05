@@ -1,0 +1,2 @@
+- https://noic.com.br/materiais-informatica/curso/menor-caminho/
+    - https://cses.fi/problemset/task/1672
