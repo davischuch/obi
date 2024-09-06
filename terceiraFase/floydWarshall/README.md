@@ -1,2 +1,5 @@
 - https://noic.com.br/materiais-informatica/curso/menor-caminho/
     - https://cses.fi/problemset/task/1672
+    - https://codeforces.com/gym/101845/problem/C
+    - https://olimpiada.ic.unicamp.br/pratique/p2/2008/f1/lanche/
+        - https://neps.academy/br/exercise/307
