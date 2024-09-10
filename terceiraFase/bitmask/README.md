@@ -1,0 +1,2 @@
+- https://noic.com.br/materiais-informatica/ideias/bitmask/
+    - https://dmoj.ca/problem/cco15p2
