@@ -1,3 +1,0 @@
-- https://noic.com.br/materiais-informatica/ideias/ideia-04/
-    - https://olimpiada.ic.unicamp.br/pratique/p2/2016/f1/sanduiche/
-    - https://csacademy.com/contest/archive/task/cities-robbery/

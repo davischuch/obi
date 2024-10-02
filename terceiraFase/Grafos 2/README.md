@@ -1,7 +1,0 @@
-- https://noic.com.br/materiais-informatica/curso/graphs-02/
-    - https://olimpiada.ic.unicamp.br/pratique/p2/2013/f2/troia/
-        - https://br.spoj.com/problems/TROIA13/
-    - https://olimpiada.ic.unicamp.br/pratique/pj/2011/f2/gincana/
-    - https://neps.academy/br/exercise/535
-    - https://olimpiada.ic.unicamp.br/pratique/p2/2012/f1/tarzan/
-        - https://neps.academy/br/exercise/520
